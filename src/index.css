@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+canvas {
+  image-rendering: auto;
+  display: block;
+}
+
+button:focus-visible {
+  outline: 2px solid #4caf50;
+  outline-offset: 2px;
+}
+
+/* Fullscreen mode optimizations */
+:fullscreen {
+  background: #000000;
+}
+
+:fullscreen .game-container {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border-radius: 0 !important;
+}
+
+/* Hide cursor in fullscreen during gameplay */
+.game-active {
+  cursor: none;
+}
+
+.game-active:hover {
+  cursor: crosshair;
+}
