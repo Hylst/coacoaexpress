@@ -998,6 +998,7 @@ export default function Frogger() {
   const [musicOn, setMusicOn] = useState(true);
   const [sfxOn, setSfxOn] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   
   const musicOnRef = useRef(musicOn);
@@ -1313,7 +1314,33 @@ export default function Frogger() {
         >
           <span>{isFullscreen ? '🖥️' : '⛶'}</span> <span>{isFullscreen ? 'Quitter' : 'Plein Écran'}</span>
         </button>
+        <button
+          onClick={() => setShowInfo(true)}
+          className="px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-2 bg-gray-900 text-gray-300 border border-gray-800 hover:border-emerald-500/50"
+          title="Comment ce jeu a été fait"
+        >
+          <span>ℹ️</span> <span>Infos</span>
+        </button>
       </div>
+
+      {showInfo && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm p-4" onClick={() => setShowInfo(false)}>
+          <div className="w-full max-w-lg max-h-[85vh] overflow-y-auto rounded-2xl bg-gray-950 border border-emerald-500/30 shadow-2xl" style={{ boxShadow: '0 0 40px rgba(16,185,129,0.2)' }} onClick={e => e.stopPropagation()}>
+            <div className="p-6 space-y-3.5 text-sm leading-relaxed text-gray-300">
+              <h3 className="text-emerald-400 text-xl font-black tracking-wide" style={{ textShadow: '0 0 20px rgba(16,185,129,0.5)' }}>Comment ce jeu a été fait</h3>
+              <p><strong className="text-white">Stack :</strong> React 19, TypeScript 5.9, Tailwind CSS 4, Vite 7, compilé en un seul fichier HTML, aucune dépendance chargée depuis l'extérieur.</p>
+              <p><strong className="text-white">Graphismes :</strong> tout est dessiné en Canvas 2D à chaque image (route, rivière, véhicules, nénuphars), aucun sprite ni image externe.</p>
+              <p><strong className="text-white">Musique &amp; sons :</strong> synthétisés en direct avec l'API Web Audio, aucun fichier audio chargé.</p>
+              <p><strong className="text-white">Interactions :</strong> flèches ou ZQSD pour sauter case par case, touche E ou Espace pour tirer la langue et gober une mouche à distance sans se déplacer.</p>
+              <p><strong className="text-white">Architecture :</strong> boucle de jeu dédiée (<code>useGameLoop.ts</code>) séparée du rendu Canvas, l'état de la grenouille et des obstacles vit dans des refs pour éviter les re-rendus React à chaque frame.</p>
+              <p><strong className="text-white">Algorithmes notables :</strong> la grenouille doit rester posée sur un tronc ou nénuphar flottant tant qu'elle est sur la rivière (elle dérive avec son support et se noie si elle en tombe), tandis que la traversée de la route est mortelle au contact d'un véhicule. Alligators à éviter en plus des troncs, mouches bonus attrapées à la langue.</p>
+            </div>
+            <div className="border-t border-gray-800 p-4 text-center">
+              <button onClick={() => setShowInfo(false)} className="px-6 py-2.5 rounded-xl font-bold text-black bg-emerald-400 hover:bg-emerald-300 active:scale-95 transition-all">Fermer</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Elegant Sub-Footer Credits */}
       <div className="mt-4 text-center space-y-1.5 max-w-md opacity-80">
