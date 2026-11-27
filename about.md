@@ -7,7 +7,7 @@
 
 Un hommage libre au genre classique de la traversée à risques : route à esquiver, puis
 rivière à franchir de rondin en rondin, jusqu'aux nénuphars du haut. Dix décors visuels
-différents, des caïmans qui se font passer pour des rondins, des mouches dorées à gober.
+différents, des alligators qui se font passer pour des rondins, des mouches dorées à gober.
 
 Le nom joue sur l'onomatopée du coassement (« coâ coâ », l'équivalent français de
 « ribbit ») et sur la vitesse de la traversée.

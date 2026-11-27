@@ -76,3 +76,7 @@ testée isolément. Voir aussi `structure.md`.
 - [ ] Aucun test automatisé embarqué sur le réducteur, alors qu'il s'agit de fonctions
   pures faciles à couvrir (c'est justement ce qui a permis de vérifier les deux correctifs
   sans naviguer manuellement dans le jeu).
+
+## Audit du 27/11/2026
+
+- [ ] Vérifier que les 10 décors sont atteignables dans une partie.

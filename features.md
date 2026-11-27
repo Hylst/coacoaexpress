@@ -2,10 +2,10 @@
 
 ## Gameplay
 
-- ✅ Traversée en deux temps : route (véhicules) puis rivière (rondins, tortues, caïmans)
+- ✅ Traversée en deux temps : route (véhicules) puis rivière (rondins, tortues, alligators)
 - ✅ **Les voitures tuent réellement au contact** (bug majeur corrigé, voir todo.md)
 - ✅ **Rater un nénuphar à l'arrivée coûte réellement une vie** (bug majeur corrigé)
-- ✅ Tortues qui plongent périodiquement, caïmans à gueule piégeuse
+- ✅ Tortues qui plongent périodiquement, alligators à gueule piégeuse
 - ✅ 6 nénuphars à remplir pour terminer un niveau, difficulté croissante ensuite
 - ✅ Combos et bonus de temps à chaque nénuphar rempli
 - ✅ Vie supplémentaire tous les 3000 points

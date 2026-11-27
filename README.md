@@ -13,7 +13,7 @@ sautant de rondin en tortue (attention, certaines plongent), jusqu'aux nénuphar
 Remplissez les 6 nénuphars pour terminer le niveau. Chaque niveau accélère la circulation
 et change de décor.
 
-Les caïmans se font passer pour des rondins jusqu'à ce que leur gueule s'ouvre. Les mouches
+Les alligators se font passer pour des rondins jusqu'à ce que leur gueule s'ouvre. Les mouches
 dorées rapportent des points, à la langue (à distance) ou juste en passant à côté.
 
 ## Contrôles
@@ -28,7 +28,7 @@ dorées rapportent des points, à la langue (à distance) ou juste en passant à
 
 - 10 thèmes visuels qui défilent d'un niveau à l'autre (tropical, arctique, cyberpunk,
   nucléaire, sucreries...)
-- Rondins, tortues plongeantes, caïmans à gueule piégeuse
+- Rondins, tortues plongeantes, alligators à gueule piégeuse
 - Voitures, camions, bulldozers, voitures de police avec gyrophare
 - Combos et bonus de temps à chaque nénuphar rempli, vie bonus tous les 3000 points
 - Mouches dorées à gober au vol
